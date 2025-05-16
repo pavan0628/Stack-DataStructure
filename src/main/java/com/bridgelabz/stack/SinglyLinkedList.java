@@ -49,6 +49,7 @@ public class SinglyLinkedList<E extends Comparable<E>> {
         Node temp=head;
         head=temp.next;
     }
+
     public void popLast(){
         if(head==null){
             System.out.println("the list is empty");
@@ -131,6 +132,10 @@ public class SinglyLinkedList<E extends Comparable<E>> {
 
 
     }
+    E peak(){
+        return (E)head.data;
+    }
+
 
     public void display(){
         Node temp = this.head;
@@ -149,5 +154,13 @@ public class SinglyLinkedList<E extends Comparable<E>> {
     }
 
 
+    public void deleteFirst() {
+        Node temp=head;
+        while(temp!=null){
+            System.out.println(temp.data+" Has been poped from stack ");
+            head=temp.next;
+            temp=temp.next;
+        }
+    }
 }
 

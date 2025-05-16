@@ -8,7 +8,15 @@ public class MyStack {
         list.addFirst(data);
     }
 
+    void peak(){
+        System.out.println(list.peak());
+    }
+
     public void display() {
         list.display();
+    }
+
+    public void pop() {
+        list.deleteFirst();
     }
 }
