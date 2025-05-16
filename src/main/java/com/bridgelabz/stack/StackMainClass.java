@@ -12,6 +12,5 @@ public class StackMainClass {
         stack.peak();
         stack.pop();
         stack.display();
-
     }
 }

@@ -1,5 +1,7 @@
 package com.bridgelabz.stack;
 
+import com.bridgelabz.linkedlist.SinglyLinkedList;
+
 public class MyStack {
     static SinglyLinkedList list=new SinglyLinkedList();
 

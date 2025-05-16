@@ -1,4 +1,4 @@
-package com.bridgelabz.stack;
+package com.bridgelabz.linkedlist;
 
 public class Node<E extends Comparable<E>> {
 
