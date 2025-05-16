@@ -62,10 +62,28 @@ public class SinglyLinkedList<E extends Comparable<E>> {
     public void deleteFirst() {
         Node temp=head;
         while(temp!=null){
-            System.out.println(temp.data+" Has been poped from stack ");
+            System.out.println(temp.data+" Has been dequeue from queue ");
             head=temp.next;
             temp=temp.next;
         }
+    }
+
+    public void deleteLast() {
+
+        int size=size();
+        while(size!=0){
+            Node temp=head;
+            Node prev=head;
+            while(temp.next!=null){
+                prev=temp;
+                temp=temp.next;
+            }
+            System.out.println("The last element is deleted from the list "+temp.data);
+            prev.next=null;
+            size--;
+        }
+
+
     }
 }
 

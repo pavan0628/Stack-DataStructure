@@ -11,4 +11,9 @@ public class MyQueue {
     void display(){
         list.display();
     }
+
+    void deQueue(){
+        list.deleteFirst();
+    }
+
 }
